@@ -6,8 +6,8 @@ export PATH
 #	System Required: CentOS/Debian/Ubuntu
 #	Description: VPS Tools
 #	Version: 2023.03.11_01
-#	Author: ChennHaoo
-#	Blog: https://github.com/Chennhaoo
+#	Author: zhuji9999
+#	Blog: https://github.com/zhuji9999
 #=================================================
 
 sh_ver="2023.03.11_01"
@@ -196,7 +196,7 @@ Install_SSHPor(){
 				echo -e "${Error} 没有发现 SSH修改端口脚本，开始下载..."
 		fi
 		cd "${file}"
-			if ! wget -N --no-check-certificate https://raw.githubusercontent.com/Chennhaoo/Shell_Bash/master/ssh_port.sh; then
+			if ! wget -N --no-check-certificate https://raw.githubusercontent.com/zhuji9999/Shell_Bash/master/ssh_port.sh; then
 				echo -e "${Error} SSH 修改端口脚本下载失败 !" && exit 1
 			else
 				echo -e "${Info} SSH 修改端口脚本下载完成 !"
@@ -346,7 +346,7 @@ BBR_installation_status(){
 		echo -e "${Error} 没有发现 BBR脚本，开始下载..."
 	fi
 	cd "${file}"
-	if ! wget -N --no-check-certificate https://raw.githubusercontent.com/Chennhaoo/Shell_Bash/master/bbr_CH.sh; then
+	if ! wget -N --no-check-certificate https://raw.githubusercontent.com/zhuji9999/Shell_Bash/master/bbr_CH.sh; then
 		echo -e "${Error} BBR 脚本下载失败 !" && exit 1
 	else
 		echo -e "${Info} BBR 脚本下载完成 !"
@@ -441,7 +441,7 @@ Lkl-Haproxy(){
 		if [[ ! -e ${lkl_Haproxy_C_file} ]]; then
 			echo -e "${Error} 没有发现 Lkl-Haproxy for CentOS 脚本，开始下载..."
 			cd "${file}"
-			if ! wget -N --no-check-certificate https://github.com/Chennhaoo/Shell_Bash/raw/master/other/lkl-haproxy/tcp_nanqinlang-haproxy-centos.sh; then
+			if ! wget -N --no-check-certificate https://github.com/zhuji9999/Shell_Bash/raw/master/other/lkl-haproxy/tcp_nanqinlang-haproxy-centos.sh; then
 				echo -e "${Error} Lkl-Haproxy for CentOS 脚本下载失败 !" && exit 1
 			else
 				echo -e "${Info} Lkl-Haproxy for CentOS 脚本下载完成 !"
@@ -453,7 +453,7 @@ Lkl-Haproxy(){
 		if [[ ! -e ${lkl_Haproxy_D_file} ]]; then
 			echo -e "${Error} 没有发现 Lkl-Haproxy for Debian 脚本，开始下载..."
 			cd "${file}"
-			if ! wget -N --no-check-certificate https://github.com/Chennhaoo/Shell_Bash/raw/master/other/lkl-haproxy/tcp_nanqinlang-haproxy-debian.sh; then
+			if ! wget -N --no-check-certificate https://github.com/zhuji9999/Shell_Bash/raw/master/other/lkl-haproxy/tcp_nanqinlang-haproxy-debian.sh; then
 				echo -e "${Error} Lkl-Haproxy for Debian 脚本下载失败 !" && exit 1
 			else
 				echo -e "${Info} Lkl-Haproxy for Debian 脚本下载完成 !"
@@ -473,7 +473,7 @@ Lkl-Rinetd(){
 		if [[ ! -e ${lkl_Rinetd_C_file} ]]; then
 			echo -e "${Error} 没有发现 Lkl-Rinetd for CentOS 脚本，开始下载..."
 			cd "${file}"
-			if ! wget -N --no-check-certificate https://github.com/Chennhaoo/Shell_Bash/raw/master/other/lkl-rinetd/tcp_nanqinlang-rinetd-centos.sh; then
+			if ! wget -N --no-check-certificate https://github.com/zhuji9999/Shell_Bash/raw/master/other/lkl-rinetd/tcp_nanqinlang-rinetd-centos.sh; then
 				echo -e "${Error} Lkl-Rinetd for CentOS 脚本下载失败 !" && exit 1
 			else
 				echo -e "${Info} Lkl-Rinetd for CentOS 脚本下载完成 !"
@@ -485,7 +485,7 @@ Lkl-Rinetd(){
 		if [[ ! -e ${lkl_Rinetd_D_file} ]]; then
 			echo -e "${Error} 没有发现 Lkl-Rinetd for Debian 脚本，开始下载..."
 			cd "${file}"
-			if ! wget -N --no-check-certificate https://raw.githubusercontent.com/Chennhaoo/Shell_Bash/master/other/lkl-rinetd/tcp_nanqinlang-rinetd-debianorubuntu.sh; then
+			if ! wget -N --no-check-certificate https://raw.githubusercontent.com/zhuji9999/Shell_Bash/master/other/lkl-rinetd/tcp_nanqinlang-rinetd-debianorubuntu.sh; then
 				echo -e "${Error} Lkl-Rinetd for Debian 脚本下载失败 !" && exit 1
 			else
 				echo -e "${Info} Lkl-Rinetd for Debian 脚本下载完成 !"
@@ -940,7 +940,7 @@ ${Green_font_prefix} 5. ${Font_color_suffix}取消测试
 	if [[ ${SpeedNet_num} == "1" ]]; then
 		echo -e "${Info} 您选择的是： 三网回程线路快速测试 结果仅供参考，已开始测试 !
 		"		
-		bash <(curl -sSL https://raw.githubusercontent.com/Chennhaoo/Shell_Bash/master/SpeedNet_BK.sh)
+		bash <(curl -sSL https://raw.githubusercontent.com/zhuji9999/Shell_Bash/master/SpeedNet_BK.sh)
 	elif [[ ${SpeedNet_num} == "2" ]]; then
 		echo -e "${Info} 您选择的是：SpeedTest.net三网回程网速测速（单线程/8线程），已开始测试 !
 		"		
@@ -988,7 +988,7 @@ AutoTrace_DL(){
 		echo -e "${Error} 没有发现 AutoTrace 测试脚本，开始下载..."
 	fi
 	cd "${file}"
-	if ! wget -N --no-check-certificate https://raw.githubusercontent.com/Chennhaoo/Shell_Bash/master/AutoTrace.sh; then
+	if ! wget -N --no-check-certificate https://raw.githubusercontent.com/zhuji9999/Shell_Bash/master/AutoTrace.sh; then
 		echo -e "${Error} AutoTrace 测试脚本下载失败 !" && exit 1
 	else
 		echo -e "${Info} AutoTrace 测试脚本下载完成 !"
@@ -1034,7 +1034,7 @@ input_BL
 clear
 [[ ${release} != "debian" ]] && [[ ${release} != "ubuntu" ]] && [[ ${release} != "centos" ]] && echo -e "${Error} 本脚本不支持当前系统 ${release} !" && exit 1
 echo -e " VPS工具包 一键管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  -- Toyo | ChennHaoo --
+  -- Toyo | zhuji9999 --
   
  ${Green_font_prefix} 1.${Font_color_suffix} 安装常用依赖（含更新源）
  ${Green_font_prefix} 2.${Font_color_suffix} 更新软件源
