@@ -5,7 +5,7 @@ export PATH
 #=================================================
 #	System Required: CentOS/Debian/Ubuntu
 #	Description: 三网回程路由详细测试
-#	Version: 2023.03.11_02
+#	Version: 2023.06.1
 #	Author: ChennHaoo
 #   参考：https://github.com/zq/shell/blob/master/autoBestTrace.sh  
 #         https://github.com/fscarmen/warp_unlock
@@ -398,7 +398,7 @@ NT_IPv4_IP_CN_Mtr(){
 #IP v4 库
 IPv4_IP(){
     #电信
-    IPv4_1="14.215.116.1"
+    IPv4_1="125.88.145.121"
     IPv4_1_name="中国 广州 电信"
     
     IPv4_2="58.215.144.100"
@@ -410,7 +410,7 @@ IPv4_IP(){
     IPv4_4="36.248.43.210"
     IPv4_4_name="中国 福州 联通"
     
-    IPv4_5="153.35.105.70"
+    IPv4_5="153.35.105.1"
     IPv4_5_name="中国 无锡 联通"
     
     IPv4_6="202.106.50.1"
