@@ -5,7 +5,7 @@ export PATH
 #=================================================
 #	System Required: CentOS/Debian/Ubuntu
 #	Description: 四网回程路由线路测试
-#	Version: 2023.08.20
+#	Version: 2026.05.19
 #
 #	Blog: https://www.wn12.cn/
 #=================================================
